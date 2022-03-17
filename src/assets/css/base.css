@@ -1,0 +1,9 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
