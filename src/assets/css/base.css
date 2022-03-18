@@ -6,4 +6,8 @@ body {
 html {
     scroll-behavior: smooth;
   }
+  .title {
+    font-family: 'Aref Ruqaa', sans-serif; 
+    font-size: 60px;
+  }
   
