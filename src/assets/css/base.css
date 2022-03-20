@@ -10,4 +10,20 @@ html {
     font-family: 'Aref Ruqaa', sans-serif; 
     font-size: 60px;
   }
+
+  .title-font {
+    font-family: 'Aref Ruqaa', sans-serif; 
+  }
   
+  .a2a_kit  {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    flex-direction: column-reverse;;
+  }
+
+  .a2a_kit a {
+    margin-bottom: 4px;
+  } 
