@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from './modal';
+import Modal from './card-modal';
 import data from './../data/sections.json';
 
 var  links, map;
