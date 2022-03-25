@@ -6,9 +6,15 @@ body {
 html {
     scroll-behavior: smooth;
   }
-  .title {
+  .title ,
+  .title-sm {
     font-family: 'Aref Ruqaa', sans-serif; 
+  }
+  .title {
     font-size: 60px;
+  }
+  .title-sm {
+    font-size: 25px;
   }
 
   .title-font {
@@ -22,9 +28,14 @@ html {
     right: 0;
     display: flex;
     flex-direction: column-reverse;
-    z-index: 999;
+    z-index: 10;
   }
 
   .a2a_kit a {
     margin-bottom: 4px;
   } 
+
+  .clap {
+    height: 68px;
+    margin: auto;
+  }

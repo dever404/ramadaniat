@@ -5,10 +5,15 @@ const Suive = (props) => {
   const date = new Date().toLocaleDateString(),
         stor = "Wirdi-"+date, 
         wirdiCokie = window.localStorage.getItem(stor).split(','),
+        score = window.localStorage.getItem('score'),
         items = wirdiCokie.map( (index) =>{
-          return  (
-            <li> { index }</li>
-          )
+          if( index !== '') {
+            return  (
+              <li> { index }</li>
+            )
+          } else {
+            return  null
+          }
         });
   return (
     <>
@@ -22,13 +27,23 @@ const Suive = (props) => {
                 <div className="flex items-start justify-between p-3 border-b border-solid rounded-t ">
                   <h3 className="text-2xl font-semibold"> ورد اليوم :  </h3>
                 </div>
+                { console.log(items[0])}
+                { items[0] != null ? (
                 <div className="relative p-6 flex-auto">
-                  لاتمام ورد اليوم ينقصك { wirdiCokie.length } اقسام  <br/><br/>
+                  {/* لاتمام ورد اليوم ينقصك { wirdiCokie.length } اقسام  <br/><br/> */}
+                  مجموع نقاطك من التحدي هي : { score } <br/><br/>
                   <b>الاقسام المتبقية من تحدي اليوم:</b><br/><br/>
                   <ul className='mr-5 pr-5 list-disc'>
                     { items }
                   </ul>
                 </div>
+                ) : 
+                <div className="relative p-6 flex-auto">
+                    <img className="clap" src={require("./../assets/img/clap.gif")} alt="" />
+                  <b> تهانينا لقد اتممت تحدي اليوم </b>
+                  <span>&#128522;</span>
+                </div>
+                }
                 <div className=" mr-5 p-3 border-t border-solid rounded-b">
                   <button
                     className="background-transparent font-bold   text-sm mr-1 mb-1"

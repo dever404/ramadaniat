@@ -6,7 +6,8 @@ const Modal = (props) => {
         stor = "Wirdi-"+date, 
         wirdiCokie = localStorage.getItem(stor).split(','),
         newCokie = [];
-       var pushVisible = 'hidden' ;
+       var pushVisible = 'hidden' ,
+          score = window.localStorage.getItem('score');
 
         wirdiCokie.map( (index) =>{
           if( index == props.name )
@@ -18,6 +19,8 @@ const Modal = (props) => {
       if( index != val)
         newCokie.push(index)
     });
+    score = parseInt(score) + 10;
+    localStorage.setItem('score',score);
     localStorage.setItem(stor,newCokie);
     setShowModal(false);
   }

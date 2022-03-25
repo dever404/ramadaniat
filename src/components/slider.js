@@ -1,6 +1,12 @@
 import Suive from './suive-modal';
 
+
 export default function Slider() {
+    const dateDay = new Intl.DateTimeFormat('ar-TN-u-ca-islamic', {day: 'numeric', month: 'long',weekday: 'long',year : 'numeric'}).format(Date.now());
+
+    function handleClick() { 
+        document.getElementById("sections").classList.remove("hidden");
+    }
     return (
         <div className="md:py-10 lg:py-4 grid grid-cols-1 lg:grid-cols-2 mx-2 relative">
             <div className="">
@@ -20,10 +26,16 @@ export default function Slider() {
                 </p>
                 <div className="mt-5 sm:mt-8">
                     <div className="rounded-md shadow mb-3">
-                    <a href="#sections" className="w-full flex md:flex-none items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-lg"> ابدأ رحلتك الرمضانية </a>
+                    <a href="#sections" onClick={() => handleClick() } className="w-full flex md:flex-none items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-lg"> إبداء رحلتك الرمضانية </a>
                     </div>
-                    <Suive/>
+                   {<Suive/> } 
+
+                   {/*<div className="rounded-md shadow my-3">
+                    <a href="#demo" className="w-full flex md:flex-none items-center justify-center  px-6 py-2 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:text-lg"> فيديو تقديمي </a>
+                    </div>*/}
+
                 </div>
+                <h2 className='tracking-tight font-extrabold  py-10 lg:py-20  text-4xl text-center title-sm'>   { dateDay }  </h2>
             </div>
         </div>
 
