@@ -18,7 +18,7 @@ const Suive = (props) => {
   return (
     <>
       <div className="">
-      <button className="w-full flex md:flex-none items-center justify-center  px-6 py-2 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:text-lg" onClick={() => setShowModal(true)}> تتبع تقدمك  </button>
+      <button className="w-full flex md:flex-none items-center justify-center  px-6 py-2 border border-transparent text-slate-700  font-medium rounded-md bg-[#b4d6c1] hover:bg-[#a7cdb6] md:text-lg" onClick={() => setShowModal(true)}> تتبع تقدمك  </button>
       </div>
       {showModal ? (
           <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">

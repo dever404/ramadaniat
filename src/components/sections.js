@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from './card-modal';
-import data from './../data/sections.json';
+import data from './../data/sections-data.json';
 
 var  links, map;
 data.map( (index) =>{

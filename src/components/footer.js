@@ -14,8 +14,8 @@ export default function Footer() {
             a2a_config.locale = "ar";
             </script>
 
-            <div className="bg-slate-800">
-                <p className="max-w-7xl mx-auto py-3  font-medium text-white text-center truncate"> 
+            <div className="">
+                <p className="max-w-7xl mx-auto py-3  font-medium text-slate-800 text-center truncate"> 
                 2022 © وردي لنحيا بروح ايمانية 
                 </p>
             </div>

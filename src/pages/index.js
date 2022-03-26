@@ -2,9 +2,9 @@ import Slider from './../components/slider';
 import Header from './../components/header';
 import Footer from './../components/footer';
 import Sections from './../components/sections';
-//import Demo from './../components/demo';
+import Demo from './../components/demo';
 import Form from './../components/form';
-import data from './../data/sections-v2.json';
+import data from './../data/sections-name.json';
 
 export default function App() {
     const date = new Date().toLocaleDateString(),
@@ -27,7 +27,10 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <Slider />
           <Sections />
-          {/*<Demo /> <Form />*/}
+          <div id='demo' className='hidden'>
+            <Form />
+            <Demo /> 
+          </div>
         </div>
         <Footer />
       </div>
