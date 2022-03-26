@@ -1,0 +1,7 @@
+.h-bendeux p{
+    animation: 25s linear 1s infinite running slidein;
+}
+@keyframes slidein {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0%); }
+  }
