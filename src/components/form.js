@@ -25,9 +25,10 @@ export default class Form extends Component {
   render() {
     return (
     <div className='py-10'>
-        <h2 className='text-4xl tracking-tight font-extrabold text-gray-800 pb-3'>>> النشرة   <span className='text-indigo-500'>   الإخبارية :</span> </h2> 
-        <p className=' pb-20'>    ( سجل رقمك ليصلك كل جديد )</p>
+                  <h2 className='text-2xl text-center tracking-tight font-extrabold text-slate-900 pb-10  '>رحلتنا ستنطلق قريبا ... </h2>
+
         <div fluid className="shadow-lg bg-white rounded-md  py-10 px-2 mt-5 mb-10">
+            <p className=' pb-10 text-center'>  سجل رقمك ليصلك اشعار رحلتنا </p>
             <form className="form" onSubmit={this.submitHandler} action='POST'>
                 <div className="flex justify-center">
                     <div className="ml-4 flex-initial w-64">
@@ -38,11 +39,11 @@ export default class Form extends Component {
                         pattern="[0-9]{10}"
                         autoComplete="given-name"
                         placeholder='رقم هاتفك'
-                        className="py-1 px-4 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-indigo-100 rounded-md"
+                        className="py-1 px-4 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-[#b4d6c1] rounded-md"
                         value = {this.state.tel} onChange={this.changeHandler} />
                     </div>
                     <div>
-                    <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600  focus:outline-none">
+                    <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-slate-700  bg-[#b4d6c1] hover:bg-[#a7cdb6] focus:outline-none">
                         إرسال
                     </button>
                     </div>

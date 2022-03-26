@@ -1,6 +1,11 @@
 body {
     font-family: 'Cairo', sans-serif;
     direction: rtl;
+    background-image: url('../img/bg-footer.png');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
 }
 
 html {
